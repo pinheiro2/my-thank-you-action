@@ -6,7 +6,7 @@ on:
 
 permissions:
   issues: write
-  pull resquests: write
+  pull-resquests: write
 
 jobs:
   test:
