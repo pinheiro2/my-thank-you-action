@@ -31842,8 +31842,7 @@ async function run() {
     const GITHUB_TOKEN = core.getInput('GITHUB_TOKEN');
     const octokit = github.getOctokit(GITHUB_TOKEN);
 
-    const randomPos = Math.round(Math.random() * 1000);
-    const url = `https://tenor.googleapis.com/v2/search?q=thank%20you&key=${TENOR_TOKEN}&limit=1&media_filter=gif,tinygif`;
+    const url = `https://tenor.googleapis.com/v2/search?q=thank%20you&key=${TENOR_TOKEN}&limit=1&media_filter=gif,tinygif&random=true`;
     const response = await fetch(url);
     const { results } = await response.json();
     const gifUrl = results?.[0]?.media_formats?.tinygif?.url;
