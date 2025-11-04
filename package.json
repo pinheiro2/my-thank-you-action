@@ -10,7 +10,8 @@
   "author": "Tiago P. Silva",
   "license": "ISC",
   "dependencies": {
-    "@vercel/ncc": "^0.38.4"
+    "@vercel/ncc": "^0.38.4",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@actions/core": "^1.11.1",
