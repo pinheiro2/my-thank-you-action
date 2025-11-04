@@ -11,5 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "@vercel/ncc": "^0.38.4"
+  },
+  "devDependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.1"
   }
 }
